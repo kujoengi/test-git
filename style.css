@@ -1,0 +1,160 @@
+:root{ /*css変数定義*/
+    --primary-bg:#28293E;
+    --secondary-bg:#FDF0E9;
+    --primary-color:white;
+    --secondary-color:#391400;
+    --padding-default:24px;
+    --padding-narrow:12px;
+}
+body{/*body リセット*/
+    margin: 0px;
+}
+img{
+    width: 100%;
+}
+
+header{/*header*/
+    color:var(--primary-color);
+    background-color: var(--primary-bg);
+
+    padding: var(-default-padding);
+}
+#logo{
+    width:195px;
+}
+
+
+
+main #main-about{
+    color:var(--secondary-color);
+    background-color: var(--secondary-bg);
+
+    padding: var(-default-padding);
+}
+main #main-latestwork{
+    color:var(--primary-color);
+    background-color: var(--primary-bg);
+
+    padding: var(-default-padding);
+}
+
+main #main-images{
+    display: flex;
+    flex-wrap:wrap;
+}
+
+main #main-images img{
+    width:50%;
+}
+
+.main-latestwork{
+    position: relative;
+}
+
+.work-genre,work-title{
+    position: absolute;
+}
+
+.work-genre{
+    bottom: 60px;
+    left: 12px;
+    background-color: white;
+    color:var(--secondary-color);
+    font-size: 12px;
+    padding: 4px 24px;
+    border-radius: 24px;
+}
+
+.work-title{
+    bottom: 24px;
+    left: 12px;
+    font-weight: bold;
+}
+
+fotter{
+    padding-top: 40px;
+    color:var(--primary-color);
+    background-color: var(--primary-bg);
+    font-size: 12px;
+    padding-left: var(--padding-footer);
+    padding-right: var(--padding-footer);
+}
+
+footer hr{
+    border-color: rgba(255, 255, 255, 0.2);
+    margin-bottom: 12px;
+}
+
+#footer-title{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+
+.footer-menu{
+    margin: 36px;
+}
+
+.footer-menu-title{
+    color: var(--teritiary-color);
+    margin-bottom: 24px;
+}
+
+.footer-menu-item{
+    margin-bottom: 8px;
+}
+
+#footer-sns{
+    margin-bottom: 24px;
+}
+
+.sns-icon{
+    width: 24px;
+}
+
+#footer-title,#footer-menus,#footer-sns{
+    text-align: center;
+}
+
+#footer-sub{
+    text-align: center;
+    font-size: 9px;
+    padding-bottom: var(--padding-narrow);
+}
+
+
+@media(min-width:768px){
+    #header-catch{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    #header-catch-img,#header-catch-text{
+        padding:5%;
+    }
+}
+
+@media(min-width:768px){
+    #main-about{
+        display: flex;
+    }
+    #main-about-image,#main-about-text{
+        padding: 10px;
+    }
+    #main-latestwork-images{
+        display: flex;
+        justify-content: space-between;
+    }
+    .main #main-images{
+        flex-wrap:nowrap;
+        justify-content: space-between;
+    }
+    main #main-images img{
+        width: 16%;
+    }
+}
+@media(min-width:768px){
+    #footer-main,#footer-menus{
+        display: flex;
+        justify-content: space-between;
+    }
+}
