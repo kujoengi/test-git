@@ -1,5 +1,5 @@
 :root{ /*css変数定義*/
-    --primary-bg:#28293E;
+    --primary-bg:#3f4541;
     --secondary-bg:#FDF0E9;
     --teritiary-color:#EF6D58;
     --primary-color:white;
@@ -73,7 +73,7 @@ main #main-images img{
     font-weight: bold;
 }
 
-fotter{
+footer{
     padding-top: 40px;
     color:var(--primary-color);
     background-color: var(--primary-bg);
@@ -139,7 +139,11 @@ footer hr{
     #main-about{
         display: flex;
     }
-    #main-about-image,#main-about-text{
+    #main-about-image{
+        padding: 10px;
+        width: 200px;
+    }
+    #main-about-text{
         padding: 10px;
     }
     #main-latestwork-images{
