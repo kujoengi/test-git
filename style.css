@@ -20,7 +20,7 @@ header{/*header*/
     padding: var(-default-padding);
 }
 #logo{
-    width:195px;
+    width:75px;
 }
 
 
@@ -298,4 +298,8 @@ header{
         color:ver(--primary-color);
         border:1px solid white;
     }
+}
+
+#header-simple{
+    text-align: center;
 }
