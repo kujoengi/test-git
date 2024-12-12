@@ -1,10 +1,12 @@
 :root{ /*css変数定義*/
     --primary-bg:#28293E;
     --secondary-bg:#FDF0E9;
+    --teritiary-color:#EF6D58;
     --primary-color:white;
     --secondary-color:#391400;
     --padding-default:24px;
     --padding-narrow:12px;
+    --padding-footer:24px;
 }
 body{/*body リセット*/
     margin: 0px;
