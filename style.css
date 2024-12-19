@@ -1,9 +1,9 @@
 :root{ /*css変数定義*/
     --primary-bg:#3f4541;
-    --secondary-bg:#FDF0E9;
+    --secondary-bg:#c5cfc3;
     --teritiary-color:#EF6D58;
     --primary-color:white;
-    --secondary-color:#391400;
+    --secondary-color:#000000;
     --padding-default:24px;
     --padding-narrow:12px;
     --padding-footer:24px;
@@ -51,6 +51,7 @@ main #main-images img{
 
 .main-latestwork{
     position: relative;
+    width: 100%;
 }
 
 .work-genre,work-title{
@@ -268,7 +269,7 @@ header{
   
 /* アイコンがクリックされたらメニューを表示 */
 #drawer_input:checked ~ .nav_content {
-    left: 0;/* メニューを画面に入れる */
+    left: 0; /* メニューを画面に入れる */
 }
 
 @media(min-width: 768px){
@@ -301,8 +302,11 @@ header{
     }
     #menuber li a,#menuber li a:hover{
         color:ver(--primary-bg);
-        color:ver(--primary-color);
-        border:1px solid white;
+    }
+    #menubar button {
+        background-color: var(--primary-bg);
+        color: var(--primary-color);
+        border: 1px solid white;
     }
 }
 
