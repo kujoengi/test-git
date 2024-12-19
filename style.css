@@ -19,7 +19,7 @@ header{/*header*/
     color:var(--primary-color);
     background-color: var(--primary-bg);
 
-    padding: var(-default-padding);
+    padding: var(--padding-default);
 }
 #logo{
     width:75px;
@@ -31,13 +31,17 @@ main #main-about{
     color:var(--secondary-color);
     background-color: var(--secondary-bg);
 
-    padding: var(-default-padding);
+    padding: var(--padding-default);
+}
+
+main #main-about-image{
+    width: 15%;
 }
 main #main-latestwork{
     color:var(--primary-color);
     background-color: var(--primary-bg);
 
-    padding: var(-default-padding);
+    padding: var(--padding-default);
 }
 
 main #main-images{
@@ -54,7 +58,7 @@ main #main-images img{
     width: 100%;
 }
 
-.work-genre,work-title{
+.work-genre,.work-title{
     position: absolute;
 }
 
@@ -115,7 +119,7 @@ footer hr{
     width: 24px;
 }
 
-#footer-title,#footer-menus,#footer-sns{
+#footer-menus,#footer-sns{
     text-align: center;
 }
 
@@ -166,6 +170,41 @@ footer hr{
     }
 }
 
+#menubar #menu, #menubar #contact {
+    display: none;
+}
+@media(min-width: 768px){
+    #menubar #menu, #menubar #contact {
+        display: block;
+    }
+    #menuber{
+        display: flex;
+        justify-content: space-between;
+    }
+    #menuber ul{
+        display: flex;
+    }
+    #menuber li{
+        list-style: none;
+        margin-right: 10px;
+    }
+    #menuber a{
+        text-decoration: none;
+    }
+    #menuber li a,#menuber li a:hover{
+        color:var(--primary-bg);
+    }
+    #menubar button {
+        background-color: var(--primary-bg);
+        color: var(--primary-color);
+        border: 1px solid white;
+    }
+}
+
+#header-simple{
+    text-align: center;
+}
+
 /* メニュー */
 header{
     position: relative;
@@ -176,7 +215,7 @@ header{
     top: 0px;
 }
 
-/* ここから下がハンバーガーメニューに関するCSS */
+/*ハンバーガーメニュー*/
 #menubar-mobile {
     width: 100%;
     display: flex;
@@ -203,9 +242,7 @@ header{
 }
   
 /* ハンバーガーメニューのアイコン */
-.drawer_open span,
-.drawer_open span:before,
-.drawer_open span:after {
+.drawer_open span,.drawer_open span:before,.drawer_open span:after {
     content: '';
     display: block;
     height: 3px;
@@ -275,41 +312,5 @@ header{
 @media(min-width: 768px){
 #menubar-mobile{
     display: none;
-     }
 }
-
-
-#menubar #menu, #menubar #contact {
-    display: none;
-}
-@media(min-width: 768px){
-    #menubar #menu, #menubar #contact {
-        display: block;
-    }
-    #menuber{
-        display: flex;
-        justify-content: space-between;
-    }
-    #menuber ul{
-        display: flex;
-    }
-    #menuber li{
-        list-style: none;
-        margin-right: 10px;
-    }
-    #menuber a{
-        text-decoration: none;
-    }
-    #menuber li a,#menuber li a:hover{
-        color:ver(--primary-bg);
-    }
-    #menubar button {
-        background-color: var(--primary-bg);
-        color: var(--primary-color);
-        border: 1px solid white;
-    }
-}
-
-#header-simple{
-    text-align: center;
 }
