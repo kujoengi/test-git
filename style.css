@@ -20,6 +20,23 @@ header{/*header*/
     background-color: var(--primary-bg);
     padding: var(--padding-default);
 }
+
+
+
+
+
+
+#header-catch-text{
+    font-size: 120%;
+}
+#header-catch-img{
+    width: 30%;
+}
+
+
+
+
+
 #logo{
  width: 10%;
 }
