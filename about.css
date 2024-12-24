@@ -1,0 +1,9 @@
+#header-simple{
+    text-align: center;
+}
+
+#main-aboutme {
+    color: var(--secondary-color);
+    background-color: var(--secondary-bg);
+    padding: var(--padding-default);
+}
