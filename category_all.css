@@ -64,6 +64,49 @@ main #main-about-image{
     width: 15%;
 }
 
+#main-portfolio{
+    color: var(--secondary-color);
+    background-color: var(--secondary-bg);
+    padding: var(--padding-default);
+
+}
+#main-portfolio li{
+    list-style-type: none;
+}
+#main-portfolio a,
+#main-portfolio a:link,
+#main-portfolio a:visited,
+#main-portfolio a:hover{
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+div.vid_contents {
+    width: 100%;/*背景色を横幅いっぱいに広げる*/
+    text-align: center;
+    }
+    video.vid_main {
+    width: 100%;
+    max-width: 920px;/*PC版での最大幅*/
+    }
+    
+.main-portfolio-image {
+    position: relative;
+}
+
+@media(min-width: 768px){
+    #main-portfolio-images{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .main-portfolio-image {
+        width: 30%;
+    }
+    
+}
+
+
 footer{
     padding-top: 40px;
     color:var(--primary-color);
