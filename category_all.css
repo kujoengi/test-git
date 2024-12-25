@@ -29,9 +29,10 @@ h1{
 
 
 
-#header-catch-text{
-    font-size: 100%;
+#header-simple{
+    text-align: center;
 }
+
 
 
 ul{
@@ -43,9 +44,7 @@ ul{
 
 li{
     margin: auto;
-    color: var(--primary-color);
 }
-
 
 
 #logo{
@@ -55,79 +54,16 @@ li{
 main{
     background-color: var(--secondary-bg);
 }
-
-main #main-about{
-    color:var(--secondary-color);
+#main-aboutme {
+    color: var(--secondary-color);
     background-color: var(--secondary-bg);
-
-    padding-left: 5%;
-
+    padding: var(--padding-default);
 }
 
 main #main-about-image{
     width: 15%;
 }
 
-main #main-latestwork{
-    color:var(--primary-color);
-    background-color: var(--primary-bg);
-
-    padding: var(--padding-default);
-}
-
-
-
-main #main-images img{
-    width:100%;
-}
-
-.main-latestwork{
-    position: relative;
-    width: 100%;
-}
-
-.work-genre,.work-title{
-    position: absolute;
-}
-
-.work-genre{
-    bottom: 60px;
-    left: 12px;
-    background-color: white;
-    color:var(--secondary-color);
-    font-size: 12px;
-    padding: 4px 24px;
-    border-radius: 24px;
-}
-
-.work-title{
-    bottom: 24px;
-    left: 12px;
-    font-weight: bold;
-}
-
-#main-image{
-    
-    width: 100%;
-    padding-top: 5px;
-    display: flex;
-    flex-wrap:wrap;
-    
-}
-h2{
-    text-align: center;
-}
-
-.example2{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    padding:2%;
-}
-.example2 div{
-    background: #764444;
-    width: 50%;
-}
 footer{
     padding-top: 40px;
     color:var(--primary-color);
