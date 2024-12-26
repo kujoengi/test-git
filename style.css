@@ -27,6 +27,9 @@ h1{
     text-align: center;
 }
 
+h3{
+    font-size: 150%;
+}
 
 
 #header-catch-text{
@@ -49,13 +52,13 @@ main{
 main #main-about{
     color:var(--secondary-color);
     background-color: var(--secondary-bg);
-
-    padding-left: 5%;
-
+    padding-bottom: -10%;
 }
 
+
+
 main #main-about-image{
-    width: 15%;
+    width: 19%;
 }
 
 main #main-latestwork{
@@ -118,6 +121,15 @@ h2{
     background: #764444;
     width: 50%;
 }
+
+div.vid_contents {
+    width: 100%;/*背景色を横幅いっぱいに広げる*/
+    text-align: center;
+    }
+    video.vid_main {
+    width: 100%;
+    max-width: 920px;/*PC版での最大幅*/
+    }
 footer{
     padding-top: 40px;
     color:var(--primary-color);
