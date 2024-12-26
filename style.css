@@ -36,6 +36,10 @@ h3{
     font-size: 100%;
 }
 
+.conhr{
+    list-style: none;
+    color: var(--primary-color);
+}
 
 
 
