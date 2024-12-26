@@ -37,8 +37,7 @@ h1{
 
 ul{
     list-style: none;
-    display:flex;
-    flex-flow: row nowrap;
+    
     margin-right: 10%;
 }
 
